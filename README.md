@@ -1,0 +1,1 @@
+### Note about solidity programming language
