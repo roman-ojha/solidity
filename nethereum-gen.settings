@@ -1,7 +1,0 @@
-{
-    "projectName": "Solidity",
-    "namespace": "Solidity.Contracts",
-    "lang": 0,
-    "autoCodeGen": true,
-    "projectPath": "../"
-}
