@@ -53,4 +53,5 @@ contract chatApp {
     }
 
     // now we have create the indexing event but we have to learn about how to access these data using indexing using web3
+    // indexed parameter is easer to search for then non indexed parameter
 }
