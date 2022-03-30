@@ -5,7 +5,7 @@ struct User {
     string name;
     uint256 uid;
     address adrs;
-    string DOB;
+    uint256 amount;
 }
 
 contract Practice01 {
@@ -17,16 +17,23 @@ contract Practice01 {
         admin = msg.sender;
     }
 
-    function getUser(
-        string memory _name,
-        address _address,
-        string memory _DOB
-    ) public {
+    function setUser(string memory _name) public {
         users[countUser] = User({
             name: _name,
-            adrs: _address,
-            DOB: _DOB,
-            uid: countUser
+            adrs: msg.sender,
+            uid: countUser,
+            amount: 0
         });
+        countUser++;
+    }
+
+    function getUser(uint256 _uid) public view returns (User memory) {
+        require(_uid < countUser);
+        return users[_uid];
+    }
+
+    function setAmount(uint256 _uid, uint256 _amount) public {
+        require(_uid < countUser);
+        users[_uid].amount = _amount;
     }
 }
