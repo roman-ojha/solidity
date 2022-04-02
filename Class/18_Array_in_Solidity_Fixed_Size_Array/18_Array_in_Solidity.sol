@@ -9,7 +9,8 @@ pragma solidity >=0.7.0 <0.9.0;
 */
 
 contract Array {
-    uint256[4] public arr = [10, 20, 30, 40];
+    uint256[] public arr = [10, 20, 30, 40];
+    address[] adrs;
 
     function setter(uint256 index, uint256 value) public {
         arr[index] = value;
@@ -17,5 +18,19 @@ contract Array {
 
     function length() public view returns (uint256) {
         return arr.length;
+    }
+
+    function returnArray() public view returns (uint256[] memory) {
+        // we can return all element form the array like this
+        return arr;
+    }
+
+    function returnMultiple()
+        public
+        view
+        returns (address[] memory, uint256[] memory)
+    {
+        // we can return multiple type of value like this as well
+        return (adrs, arr);
     }
 }
