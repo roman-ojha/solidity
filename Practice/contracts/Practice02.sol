@@ -5,8 +5,8 @@ pragma solidity >=0.6.0 <0.9.0;
 contract Practice02Calculator {
     int256 c;
 
-    constructor() {
-        c = 0;
+    constructor(int256 _x) {
+        c = _x;
     }
 
     function getC() public view returns (int256) {
