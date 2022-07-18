@@ -5,7 +5,7 @@ pragma solidity >=0.7.0 <0.9.0;
 contract local {
     uint256 age = 10;
 
-    // <function_keyword> <getter_or_setter>() <visibility> <pure_or_view> returns(<datatype>)
+    // <function_keyword> <getter_or_setter|function_name>() <visibility> <pure_or_view> returns(<datatype>)
     function getter() public view returns (uint256) {
         // public if we want outsider contract to access this function
         // view if we are not making any change just getting the value then we will use view
