@@ -8,7 +8,7 @@ pragma solidity >=0.7.0 <0.9.0;
         -> read is allowed but write is not allowed
     *) Pure:
         -> we can't use pure if function is reading that state variable
-        -> if there is not haveing any read and write for state variable only in that case we can use pure
+        -> if there is not having any read and write for state variable only in that case we can use pure keyword
 */
 
 contract local {
