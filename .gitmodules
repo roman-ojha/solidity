@@ -1,0 +1,6 @@
+[submodule "Tutorial/Tutorial_Projects/crowd-funding"]
+	path = Tutorial/Tutorial_Projects/crowd-funding
+	url = git@github.com:roman-ojha/crowdfunding-smart-contract.git
+[submodule "Tutorial/Tutorial_Projects/Lottery-Dapp"]
+	path = Tutorial/Tutorial_Projects/Lottery-Dapp
+	url = git@github.com:roman-ojha/lottery-smart-contract.git
