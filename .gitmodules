@@ -4,3 +4,6 @@
 [submodule "Tutorial/Tutorial_Projects/Lottery-Dapp"]
 	path = Tutorial/Tutorial_Projects/Lottery-Dapp
 	url = git@github.com:roman-ojha/lottery-smart-contract.git
+[submodule "Example/event-organization"]
+	path = Example/event-organization
+	url = git@github.com:roman-ojha/event-organization-smart-contract.git
