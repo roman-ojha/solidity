@@ -23,4 +23,29 @@ contract local {
 
     // if we will create public state varialbe then there is no need to create getter function for that variable
     string public name = "Roman";
+
+    // *) Return Multiple values from function
+    function sum_sub(uint256 a, uint256 b)
+        public
+        pure
+        returns (uint256, uint256)
+    {
+        // pass the type of return value that we will going to return
+        uint256 sum = a + b;
+        uint256 sub = a - b;
+        return (sum, sub);
+    }
+
+    function sum_sub2(uint256 a, uint256 b)
+        public
+        pure
+        returns (uint256 _sum, uint256 _sub)
+    {
+        // we can ever specify the return value name '_sum', '_sub' which we can access according to that as return
+        uint256 sum = a + b;
+        uint256 sub = a - b;
+        return (sum, sub);
+    }
+
+    // function info() public view return(uint,string memory)
 }

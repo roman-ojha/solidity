@@ -1,0 +1,114 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newage",
+						"type": "uint256"
+					}
+				],
+				"name": "setter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "sum_sub",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_sum",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_sub",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Class\\13_Functions_in_Solidity\\13_Functions_in_Solidity.sol": "local"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Class\\13_Functions_in_Solidity\\13_Functions_in_Solidity.sol": {
+			"keccak256": "0xb39bd610a99eeb25fdae4243a7f0072b086dbc2bb0687052e278c71d44eafff5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9e5c8a217295db7ce1b0effb40eabd19ed52a9d1b0ac689adbc76c0774e04dcf",
+				"dweb:/ipfs/Qmf4iDMbY3ArtXbnoGrjjC8zPwHx7PB9uPEXCVV9sky1kK"
+			]
+		}
+	},
+	"version": 1
+}
