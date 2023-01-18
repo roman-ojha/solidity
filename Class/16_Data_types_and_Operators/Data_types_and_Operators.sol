@@ -5,7 +5,7 @@ pragma solidity >=0.7.0 <0.9.0;
 /*
     *) Integers:
         a) int (integers) -> default int256
-            -> can't include signed value (-ve, +ve)
+            -> can include signed value (-ve, +ve)
             -> size from 8 to 256 bit
             -> can be represented as int8 to int256
             -> by default value is 0
@@ -19,6 +19,12 @@ pragma solidity >=0.7.0 <0.9.0;
             -> uint8: 0 to 255
             -> uint16: 0 to 65535
             -> range: 0 to 2^(n)-1
+
+            Operators:
+                -> Comparisons: <=, <, ==, !=, >=, > (evaluate to bool)
+                -> Bit operators: &, |, ^ (bitwise exclusive or), ~ (bitwise negation)
+                -> Shift operators: << (left shift), >> (right shift)
+                -> Arithmetic operators: +, -, unary - (only for signed integers), *, /, % (modulo), ** (exponentiation)
     *) Boolean:
         -> The bool value data type is used in Solidity to illustrate cases that have binary results. A bool has two fixed values: true or false, with false being the default. This data type only takes up 1B of storage.
         -> Operator supports:
@@ -53,6 +59,26 @@ pragma solidity >=0.7.0 <0.9.0;
         *) Comparisons: <=,<,==,!=,>=,> (evaluate to bool)
         *) Bit operators: &,|,^(bitwise exclusive or), ~(bitwise negation)
         *) Arithemetic operators: +,-,unary -, unary +, *, /,%(reminder),**(exponentialtion),<<(left shift),>>(right shift)
+
+*/
+
+/*
+    *) Solidity value types
+        Signed integers
+        Unsigned integers
+        Boolean
+        Addresses
+        Enums
+        Bytes
+
+    *) Solidity reference types
+        Fixed-size arrays
+        Dynamic-size arrays
+        Array members
+        Byte arrays
+        String arrays
+        Structs
+        Mapping
 
 */
 

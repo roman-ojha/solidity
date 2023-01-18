@@ -8,12 +8,12 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract Identity {
     // while we are doing solidity programming we have to make contract
-    // the way that we make class in other programming language we make contrace in solidity
+    // the way that we make class in other programming language we make contract in solidity
     string name;
     uint256 age;
 
     constructor() {
-        // when we will deploy contract we want to set value fo name and age
+        // when we will deploy contract we want to set value for name and age
         name = "Ravi";
         age = 17;
     }
