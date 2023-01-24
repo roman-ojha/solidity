@@ -47,5 +47,7 @@ contract local {
         return (sum, sub);
     }
 
-    // function info() public view return(uint,string memory)
+    function info() public pure returns (uint256 id, string memory _name) {
+        return (1, "Roman");
+    }
 }

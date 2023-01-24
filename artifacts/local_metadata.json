@@ -20,6 +20,24 @@
 			},
 			{
 				"inputs": [],
+				"name": "info",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "name",
 				"outputs": [
 					{
@@ -58,6 +76,35 @@
 					}
 				],
 				"name": "sum_sub",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "sum_sub2",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -102,11 +149,11 @@
 	},
 	"sources": {
 		"Class\\13_Functions_in_Solidity\\13_Functions_in_Solidity.sol": {
-			"keccak256": "0xb39bd610a99eeb25fdae4243a7f0072b086dbc2bb0687052e278c71d44eafff5",
+			"keccak256": "0x19c883b55e5dd532bf2825b84ee18e92265ee7e9b29f1eae40f0b066e38ed109",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9e5c8a217295db7ce1b0effb40eabd19ed52a9d1b0ac689adbc76c0774e04dcf",
-				"dweb:/ipfs/Qmf4iDMbY3ArtXbnoGrjjC8zPwHx7PB9uPEXCVV9sky1kK"
+				"bzz-raw://b32a60793a9bf4161326e565c3226fe5988f52adb217417d1c36bd61e95ef423",
+				"dweb:/ipfs/QmPjoqZ3BH9dGfFLNhPtq7Aw2ifZDhkCocDMdJqMT3kGCj"
 			]
 		}
 	},
