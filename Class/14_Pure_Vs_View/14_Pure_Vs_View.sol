@@ -3,7 +3,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /*
-    -> if the function didnot change the value of state variable then we can use 'view' or 'pure' for that particular function
+    -> if the function didn't change the value of state variable then we can use 'view' or 'pure' for that particular function
     *) View:
         -> read is allowed but write is not allowed
     *) Pure:
