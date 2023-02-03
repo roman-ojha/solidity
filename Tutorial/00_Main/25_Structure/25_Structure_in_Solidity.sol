@@ -27,4 +27,7 @@ contract School {
         // here we are creating student structure using constructor
         s1 = new_student;
     }
+
+    // More about structure
+    // https://jeancvllr.medium.com/solidity-tutorial-all-about-structs-b3e7ca398b1e
 }

@@ -33,4 +33,27 @@ contract Array {
         // we can return multiple type of value like this as well
         return (adrs, arr);
     }
+
+    function f(uint len) {
+        // if you want to initialized the empty array like this
+        // in that case we have to give the size of array
+        uint[] memory a = new uint[](7);
+        bytes memory b = new bytes(8);
+        a[6] = 8;
+    }
+
+    // EX:
+    struct Bar {
+        address owner;
+        uint[] x;
+    }
+    Bar[] public bars;
+    function foobar(address a) public {
+        Bar memory b;
+        b.owner = a;
+        //When 'b' is pushed to 'bars' array:
+        // (1) 'b' will be converted from memory to storage.
+        // (2) And 'x' inside it will be initialized automatically to empty array.
+        bars.push(b)
+    }
 }
