@@ -33,4 +33,12 @@ contract Array {
         // we can return multiple type of value like this as well
         return (adrs, arr);
     }
+
+    function f(uint256 len) public pure {
+        // if you want to initialized the empty array like this
+        // in that case we have to give the size of array
+        uint256[] memory a = new uint256[](7);
+        bytes memory b = new bytes(8);
+        a[6] = 8;
+    }
 }
