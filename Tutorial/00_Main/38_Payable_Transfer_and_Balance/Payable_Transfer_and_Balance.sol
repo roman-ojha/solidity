@@ -52,3 +52,38 @@ contract Payable {
         admin.transfer(100);
     }
 }
+
+contract Balance {
+    address payable user = payable(0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2);
+
+    // here we will put the address of the account where we want to send the ether
+    // here we are making explicitly type of payable
+
+    function payEther() public payable {
+        // payable - we will use payable if we want to transform some amount of ether in our contract
+        // by only writing payable in function now this contract is capable to store some amount of ether
+        // In remix IDE using value input filed we will pay some amount of ether
+    }
+
+    function getBalance() public view returns (uint256) {
+        // now using this function we will return the balance that holds by this contract
+        return address(this).balance;
+        // here 'this' means the contract instance
+        // now it will return the balance of hold by the contract
+    }
+
+    function sendEtherAccount() public {
+        // in this function we will transform ether this contract to paticular address
+        user.transfer(1 ether);
+    }
+
+    function checkBalance(address _address) public view returns (uint256) {
+        // you can check the balance of any contract address or user address that exist in blockchain network
+        // here we are checking the balance of '_address' address
+        uint256 balance = address(_address).balance;
+
+        // check the balance of the address that is calling this function
+        balance = address(msg.sender).balance;
+        return balance;
+    }
+}
