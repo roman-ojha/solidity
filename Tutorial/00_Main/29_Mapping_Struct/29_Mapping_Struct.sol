@@ -19,4 +19,7 @@ contract Map {
 
     // How can I figure out if a certain key exists in a mapping ?
     // https://ethereum.stackexchange.com/questions/13021/how-can-i-figure-out-if-a-certain-key-exists-in-a-mapping-struct-defined-inside
+
+    // Return mapping from the function:
+    // https://ethereum.stackexchange.com/questions/65589/return-a-mapping-in-a-getall-function
 }
