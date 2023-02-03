@@ -7,16 +7,23 @@ pragma solidity >=0.7.0 <0.9.0;
     -> through built in variable you can get the information about you environment such as: the ethereum address call the smart contract or how much of ether transfer to the smart contract
     -> we can breakdown these built in variable in three categories and they are:
         1) Tx (transaction)
-            -> varialbe:
+            -> variable:
                 -> tx.origin (this is the ethereum address that send the transaction)
+                -> tx.gasprice (uint): gas price of the transaction
         2) msg (message)
             -> this will give the information about calling environment of the function
             -> variables:
                 -> msg.value (will give the amount of ether that was send to the smart contract UNIT: wei)
                 -> msg.sender (this will given the ethereum address that call the function)
+                -> msg.data (bytes calldata): complete calldata
         3) block
             -> variable:
-                -> block.timestamp (this will give us the timestamp at which the block was mine)
+                -> block.timestamp (this will give us the timestamp at which we call block.timestamp)
+                -> block.chainid (uint): current chain id
+                -> block.coinbase (address payable): current block miner’s address
+                -> block.difficulty (uint): current block difficulty
+                -> block.number (uint): current block number
+                -> block.gaslimit (uint): current block gaslimit
 
 
 Alice => Contract A:            =>  Contract B
@@ -41,5 +48,3 @@ contract Global {
         // other type of global variable: https://docs.soliditylang.org/en/v0.8.6/units-and-global-variables.html
     }
 }
-
-
